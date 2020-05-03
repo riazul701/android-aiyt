@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MyTextViewDemo</string>
     <string name="name_text">Name One</string>
+    <string name="age_text">27 years old</string>
 </resources>
