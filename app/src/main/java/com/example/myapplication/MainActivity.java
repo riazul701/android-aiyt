@@ -21,4 +21,3 @@ public class MainActivity extends AppCompatActivity {
         ageTextView.setText("25 years old");
     }
 }
-
