@@ -7,10 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button loginButton,logoutButton;
+    private Button loginButton, logoutButton;
     private TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,18 +21,20 @@ public class MainActivity extends AppCompatActivity {
         logoutButton = (Button) findViewById(R.id.logoutButtonId);
         textView = (TextView) findViewById(R.id.textViewId);
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                textView.setText("Login button is clicked");
-            }
-        });
+        loginButton.setOnClickListener(this);
+        logoutButton.setOnClickListener(this);
 
-        logoutButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                textView.setText("Logout button is clicked");
-            }
-        });
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v.getId() == R.id.loginButtonId) {
+            textView.setText("Login button is clicked");
+        }
+
+        if (v.getId() == R.id.logoutButtonId) {
+            textView.setText("Logout button is clicked");
+        }
+
     }
 }
