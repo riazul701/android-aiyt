@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
     private Button loginButton, logoutButton;
     private TextView textView;
@@ -21,20 +21,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         logoutButton = (Button) findViewById(R.id.logoutButtonId);
         textView = (TextView) findViewById(R.id.textViewId);
 
-        loginButton.setOnClickListener(this);
-        logoutButton.setOnClickListener(this);
+        Handler handler = new Handler();
 
+        loginButton.setOnClickListener(handler);
+        logoutButton.setOnClickListener(handler);
     }
 
-    @Override
-    public void onClick(View v) {
-        if (v.getId() == R.id.loginButtonId) {
-            textView.setText("Login button is clicked");
-        }
+    class Handler implements View.OnClickListener {
 
-        if (v.getId() == R.id.logoutButtonId) {
-            textView.setText("Logout button is clicked");
+        @Override
+        public void onClick(View v) {
+            if (v.getId() == R.id.loginButtonId) {
+                textView.setText("Login button is clicked");
+            } else if (v.getId() == R.id.logoutButtonId) {
+                textView.setText("Logout button is clicked");
+            }
         }
-
     }
+
+
 }
