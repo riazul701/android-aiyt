@@ -20,6 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:text="@string/login_button_name"
+            android:onClick="showMessage"
             android:drawableLeft="@drawable/login"/>
 
         <Button
@@ -28,6 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:text="@string/logout_button_name"
+            android:onClick="showMessage"
             android:textAllCaps="false"
             android:drawableLeft="@drawable/logout"
             />

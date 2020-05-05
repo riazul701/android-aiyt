@@ -21,22 +21,15 @@ public class MainActivity extends AppCompatActivity {
         logoutButton = (Button) findViewById(R.id.logoutButtonId);
         textView = (TextView) findViewById(R.id.textViewId);
 
-        Handler handler = new Handler();
-
-        loginButton.setOnClickListener(handler);
-        logoutButton.setOnClickListener(handler);
     }
 
-    class Handler implements View.OnClickListener {
-
-        @Override
-        public void onClick(View v) {
-            if (v.getId() == R.id.loginButtonId) {
-                textView.setText("Login button is clicked");
-            } else if (v.getId() == R.id.logoutButtonId) {
-                textView.setText("Logout button is clicked");
-            }
+    public void showMessage(View v) {
+        if(v.getId() == R.id.loginButtonId) {
+            textView.setText("Login button is clicked");
+        } else if(v.getId() == R.id.logoutButtonId) {
+            textView.setText("Logout button is clicked");
         }
+
     }
 
 
