@@ -7,6 +7,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
     private WebView webView;
@@ -25,3 +27,4 @@ public class MainActivity extends AppCompatActivity {
         webView.loadUrl("http://www.lus.ac.bd/");
     }
 }
+
