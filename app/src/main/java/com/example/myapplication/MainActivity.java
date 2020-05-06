@@ -2,34 +2,47 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private TimePicker timePicker;
+
     private TextView textView;
     private Button button;
+    private TimePickerDialog timePickerDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        timePicker = (TimePicker) findViewById(R.id.timePickerId);
-        timePicker.setIs24HourView(true);
+
         textView = (TextView) findViewById(R.id.textViewId);
         button = (Button) findViewById(R.id.buttonId);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String time = timePicker.getCurrentHour() + ":" + timePicker.getCurrentMinute();
-                textView.setText(time);
-            }
-        });
+        button.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        TimePicker timePicker = new TimePicker(this);
+        int currentHour = timePicker.getCurrentHour();
+        int currentMinute = timePicker.getCurrentMinute();
+
+        // Here "true" in "currentHour, currentMinute, true" is for 24 hour format. For am/pm set it "false"
+        timePickerDialog = new TimePickerDialog(MainActivity.this,
+                new TimePickerDialog.OnTimeSetListener() {
+                    @Override
+                    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                        textView.setText(hourOfDay + ":" + minute);
+                    }
+                }, currentHour, currentMinute, true);
+
+        timePickerDialog.show();
     }
 }

@@ -8,11 +8,7 @@
     android:padding="10dp"
     tools:context=".MainActivity">
 
-    <TimePicker
-        android:layout_marginBottom="20dp"
-        android:id="@+id/timePickerId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></TimePicker>
+
 
     <Button
         android:id="@+id/buttonId"
