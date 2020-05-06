@@ -6,32 +6,24 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="10dp"
-    android:gravity="center"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textViewId"
+        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Current Date : "
         android:textSize="20sp"
         android:textStyle="bold"
+        android:id="@+id/textViewId"
         android:layout_marginBottom="20dp"/>
 
     <Button
-        android:id="@+id/buttonId"
+        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="select date"
+        android:text="@string/button_text"
+        android:id="@+id/buttonId"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="10dp"/>
-
-    <DatePicker
-        android:id="@+id/datePickerId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></DatePicker>
-
-
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
 </LinearLayout>
