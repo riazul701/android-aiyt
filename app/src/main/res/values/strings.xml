@@ -1,3 +1,33 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">MyCountryProfileDemo</string>
+    <string name="bangladesh_button">Bangladesh</string>
+    <string name="india_button">India</string>
+    <string name="pakistan_button">Pakistan</string>
+    <string name="bangladesh_text">
+       Bangladesh is a country in South Asia. It shares land borders with India and Myanmar (Burma). \n
+       Nepal, Bhutan and China are located near Bangladesh but do not share a border with it. \n
+       The country\'s maritime territory in the Bay of Bengal is roughly equal to the size of its land area. \n
+       Bangladesh is the world\'s eighth most populous country. \n
+       Dhaka is its capital and largest city, followed by Chittagong, which has the country\'s largest port. \n
+       Bangladesh forms the largest and easternmost part of the Bengal region.
+   </string>
+    <string name="india_text">
+       India, officially the Republic of India is a country in South Asia. \n
+       It is the seventh-largest country by area, the second-most populous country (with over 1.2 billion people), \n
+       and the most populous democracy in the world. \n
+       It is bounded by the Indian Ocean on the south, the Arabian Sea on the southwest,
+       and the Bay of Bengal on the southeast. \n
+       It shares land borders with Pakistan to the west; China, Nepal, and Bhutan to the northeast; \n
+       and Myanmar (Burma) and Bangladesh to the east.
+   </string>
+    <string name="pakistan_text">
+       Pakistan officially the Islamic Republic of Pakistan, is a country in South Asia. \n
+       It is the fifth-most populous country with a population exceeding 209,970,000 people. \n
+       In terms of area, it is the 33rd-largest country spanning 881,913 square kilometres (340,509 square miles). \n
+       Pakistan has a 1,046-kilometre (650-mile) coastline along the Arabian Sea and Gulf of Oman in the south and is bordered by India to the east, \n
+       Afghanistan to the west, Iran to the southwest, and China in the far northeast,
+       respectively. \n
+       It is separated narrowly from Tajikistan by Afghanistan\'s Wakhan Corridor in the north-west, \n
+       and also shares a maritime border with Oman.
+   </string>
 </resources>
