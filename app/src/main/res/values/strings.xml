@@ -3,6 +3,8 @@
     <string name="bangladesh_button">Bangladesh</string>
     <string name="india_button">India</string>
     <string name="pakistan_button">Pakistan</string>
+    <string name="title_text">This is a title</string>
+    <string name="message_text">Do you want to exit?</string>
     <string name="bangladesh_text">
        Bangladesh is a country in South Asia. It shares land borders with India and Myanmar (Burma). \n
        Nepal, Bhutan and China are located near Bangladesh but do not share a border with it. \n
