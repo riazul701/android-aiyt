@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private CustomAdapter customAdapter;
     List<String> listDataHeader;
     HashMap<String,List<String>> listDataChild;
+    private int lastExpandedPosition = -1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +54,16 @@ public class MainActivity extends AppCompatActivity {
                 String childString = listDataChild.get(listDataHeader.get(i)).get(i1);
                 Toast.makeText(getApplicationContext(),childString,Toast.LENGTH_SHORT).show();
                 return false;
+            }
+        });
+
+        expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+            @Override
+            public void onGroupExpand(int i) {
+                if(lastExpandedPosition != -1 && lastExpandedPosition != i) {
+                    expandableListView.collapseGroup(lastExpandedPosition);
+                }
+                lastExpandedPosition = i;
             }
         });
 
