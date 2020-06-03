@@ -1,3 +1,58 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">MyExpandableListViewDemo</string>
+
+    <string-array name="abbreviations_list_header">
+
+        <item>Afghanistan</item>
+        <item>Bangladesh</item>
+        <item>India</item>
+        <item>Bhutan</item>
+        <item>Nepal</item>
+        <item>Maldives</item>
+        <item>Pakistan</item>
+        <item>Japan</item>
+        <item>China</item>
+        <item>Sri Lanka</item>
+        <item>Australia</item>
+        <item>Ireland</item>
+        <item>Finland</item>
+        <item>Brazil</item>
+        <item>Argentina</item>
+        <item>Germany</item>
+        <item>Uruguay</item>
+        <item>Portugal</item>
+        <item>Scotland</item>
+        <item>Sweden</item>
+        <item>Iraq</item>
+        <item>Iran</item>
+
+    </string-array>
+
+    <string-array name="abbreviations_list_child">
+
+        <item>Afghanistan Country</item>
+        <item>Bangladesh Country</item>
+        <item>India Country</item>
+        <item>Bhutan Country</item>
+        <item>Nepal Country</item>
+        <item>Maldives Country</item>
+        <item>Pakistan Country</item>
+        <item>Japan Country</item>
+        <item>China Country</item>
+        <item>Sri Lanka Country</item>
+        <item>Australia Country</item>
+        <item>Ireland Country</item>
+        <item>Finland Country</item>
+        <item>Brazil Country</item>
+        <item>Argentina Country</item>
+        <item>Germany Country</item>
+        <item>Uruguay Country</item>
+        <item>Portugal Country</item>
+        <item>Scotland Country</item>
+        <item>Sweden Country</item>
+        <item>Iraq Country</item>
+        <item>Iran Country</item>
+
+    </string-array>
+
 </resources>
