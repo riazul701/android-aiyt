@@ -6,21 +6,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context="com.example.firstapplication.MainActivity">
+    tools:context="com.example.firstapplication.SecondActivity">
 
     <TextView
         android:layout_marginBottom="20dp"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold"
         android:textSize="20sp"
-        android:text="Welcome to MainActivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/button1Id"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:text="Go to second activity"
+        android:text="Welcome to SecondActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
